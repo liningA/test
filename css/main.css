@@ -260,16 +260,16 @@ li{
 }
 /*banner部分*/
 .banner{
-    width: 1000px;
-    height: 328px;
+   float: right;
     position: relative;
-    overflow: hidden;}
+    overflow: hidden;
+    width: 810px;
+}
 .img_boxes{
-    width: 1620px;
+    width: 810px;
     height: 326px;
-    position: absolute;
-    left: 190px;
-    top: 0px;
+
+    float: right;
 }
 .img_boxes li{
     float: left;

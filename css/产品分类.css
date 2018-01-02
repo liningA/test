@@ -1,0 +1,310 @@
+/*通用样式*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+.commWidth{
+    width: 1000px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #656565;
+}
+li{
+    list-style-type: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.clearFix{clear: both;
+}
+/*头部*/
+.top{
+    height: 30px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.top_left{
+    line-height: 30px;
+    float: left;
+    padding-left: 5px;
+}
+.top_left a{
+    background: url("./images/star1.jpg")  left center  no-repeat;
+    padding-left: 22px;
+    font-weight: bold;
+}
+.top_right{
+    float:right;
+    display: inline;
+    line-height: 30px;
+    font-family: "宋体";
+}
+/*logo*/
+.logo{
+    height: 90px;
+    width: 100%;
+    background-color: #1D7AD9;
+}
+.logo_left{
+    width: 190px;
+    height:90px;
+    float: left;
+}
+.logo_left img{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.serach_box{
+    float: left;
+    padding-top: 24px;
+    padding-left: 145px;
+    width: 430px;
+    height: 66px;
+}
+.serach_text{
+    width: 350px;
+    padding: 0 5px;
+    height: 35px;
+    border: none;
+    float: left;
+}
+.serach_btn{
+    width: 70px;
+    height: 36px;
+    background-color: #ff8000;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    float: right;
+}
+.shopCar{
+    float: right;
+    display: inline;
+    width: 145px;
+    height: 35px;
+    background-color:#ff8000;
+    margin-top: 24px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 31px;
+    margin-right: 59px;
+}
+.shopText{
+    width: 87px;
+    font-family: "Microsoft YaHei";
+    color: white;
+    background: url("./images/shopcar.jpg")  10px center  no-repeat ;
+    border-right: #e27a00 solid 1px;
+    text-indent: 40px;
+    line-height: 35px;
+    float: left;
+}
+.shopNum{
+    width:27px;
+    height: 35px;
+    border-left: #e27a00 solid 1px;
+    float: left;
+    font: 14px/35px "Microsoft YaHei";
+    color: #ffffff;
+    background: url("./images/shopnum.gif")  33px center  no-repeat ;
+    text-align: center;
+    padding-right: 29px;
+}
+/*导航*/
+.nav{
+    height: 35px;
+    background-color: #0036D9;
+}
+.nav_left {
+    width: 190px;
+    position: relative;
+    float: left;
+}
+.nav_left h3{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: bold;
+    background: url("../images/nav.gif") 150px center no-repeat;
+    text-align: center;
+}
+.nav_right{
+    width: 810px;
+    height: 35px;
+    float: left;
+    line-height: 35px;
+}
+.nav_right li{
+    line-height: 35px;
+    float: left;
+}
+.nav_right li a{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Microsoft YaHei UI";
+    line-height: 35px;
+    display: inline-block;
+    padding: 0 35px;
+}
+.nav_right .active{
+    background-color: #4593fd;
+}
+/*商品弹出*/
+.shop_content{
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    width: 185px;
+    border: #cccccc 1px solid;
+    background-color: #eeeeee;
+}
+.shop_content h3{
+    color: #000000;
+    font-family: "宋体";
+    font-size: 14px;
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    border-bottom: #cccccc solid 1px;
+}
+.shop_item{
+    padding: 10px 12px;
+
+}
+.shop_item .b{
+    font: 12px/1 "宋体";
+    font-weight: bold;
+}
+.shop_content a{
+    color: #000000;
+    font-family: "宋体";
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.shop_content a:hover{
+    text-decoration: underline;
+}
+.shop_item dt{
+    height: 22px;
+
+}
+
+/*左侧*/
+.leftSide{
+    width: 190px;
+
+    float: left;
+    margin-top: 19px;
+}
+.rightSide{
+    width: 810px;
+    float: left;
+}
+/*banner*/
+.banner{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 810px;
+    margin-top: 19px;
+}
+.img_boxes{
+    width: 810px;
+    height: 326px;
+
+    float: right;
+}
+.img_boxes li{
+    float: left;
+}
+.img_boxes img{
+    width: 810px;
+    height: 326px;
+    display: block;
+}
+.img_num{
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+.img_num a{
+    width: 20px;
+    height: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 0 3px;
+}
+.img_num .active{
+    background-color: #ff7700;}
+/*间距标题*/
+.distant{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.distant h3{
+    font-family: 宋体;
+    font-size: 16px;
+}
+
+/*商品展示*/
+.shop_show{
+    float: right;
+
+}
+.shop_top{
+    border-top: #cccccc solid 3px;
+}
+.shop_item2 {
+    float: left;
+    width: 195px;
+    padding: 5px 3px;
+    height: auto;
+}
+.des{
+    font-family: 宋体;
+    font-size: 12px;
+    padding-left: 16px;
+    width: 165px;
+}
+.des h3{
+    color: #ee3623;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    margin-top: 10px;
+}
+.des span{
+    display: inline-block;
+    line-height: 15px;
+    height: 15px;
+
+}
+.comments{
+    background: url("../images/2.产品分类_r2_c2.gif") 26px center no-repeat;
+    width: 106px;
+}
+
+
+
+/*footer*/
+.footer{
+    width: 100%; height: 223px; text-align: center; background-color: #CACAD9;
+}
+.contact{padding-top: 53px}
+.contact a { height: 21px; line-height: 21px; font-family: "新宋体";font-size: 12px;color:#000000 }
+.contact p {height: 21px; line-height: 21px; font-family: "新宋体";font-size: 12px}
+.contact2 a{ margin-right:20px;  display: inline-block}
+.contact2{padding-top: 34px}
