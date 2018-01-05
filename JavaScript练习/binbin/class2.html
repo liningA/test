@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>binbin-task2</title>
+</head>
+<body>
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+    <!--
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+</ul>
+
+<script type="text/javascript">
+    /*
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 60],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 80],
+        ["西安", 100]
+    ];
+    (function () {
+        /*
+        在注释下方编写代码
+        遍历读取aqiData中各个城市的数据
+        将空气质量指数大于60的城市显示到aqi-list的列表中
+        */
+        var cont= document.querySelector("#aqi-list");
+//        筛选出大于60的城市数组
+        var lists=aqiData.filter(function (item,index,array) {
+             return (item[1]>=60);
+        })
+//        数组内排序
+        lists.sort(function (a,b) {
+            return (b[1]-a[1]);
+        })
+//        以序列的格式显示出来
+        lists.forEach(function (item,index,array) {
+            var newNode=document.createElement("li");
+            newNode.innerHTML=array[index][0]+":"+array[index][1];
+            cont.appendChild(newNode);
+
+        })
+
+    })();
+</script>
+<!--第二种方式-->
+
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+    <!--
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
+</ul>
+
+<script type="text/javascript">
+    var times=0;
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+
+    (function () {
+
+        /*
+         在注释下方编写代码
+         遍历读取aqiData中各个城市的数据
+         将空气质量指数大于60的城市显示到aqi-list的列表中
+        */
+        var arr = ['1', '2', '3', '4', '5', '6']
+        var list = document.getElementById("aqi-list");
+
+
+        /*给aqiData冒泡排序*/
+        var bubbleSort=function(arr) {
+            for (var i = 0; i < aqiData.length-1; i++) {
+                for (var j = 0; j < aqiData.length-1 ; j++) {
+                    var temp;
+                    if (aqiData[j][1] < aqiData[j+1][1]) {
+                        temp = aqiData[j];
+                        aqiData[j] = aqiData[j+1];
+                        aqiData[j+1] = temp;
+                    }
+                    console.log("第" + (++times) + "次排序后：" + aqiData);
+                }
+            }
+        }
+        console.log("The result is:"+bubbleSort(arr));
+
+        /* 排序 */
+       /* aqiData.sort(function(a, b){
+            return b[1] - a[1];
+        })
+
+        for(var i = 0; i < aqiData.length; i++){
+            var choice = aqiData[i];
+            if(choice[1] >= 60){
+                var listItem = document.createElement("li");
+                listItem.innerHTML = "第" + arr[i] + '名 : ' + choice;
+                list.appendChild(listItem);
+            }
+        }*/
+
+    })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=[ 120,98,65,43,100]
+    var times=0;
+    var bubbleSort=function(arr){
+        for(var i=0;i<arr.length-1;i++){
+            for(var j=i+1;j<arr.length;j++){
+                if(arr[i]>arr[j]){//如果前面的数据比后面的大就交换
+                    var temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+                console.log("第"+(++times)+"次排序后："+arr);
+            }
+        }
+        return arr;
+    }
+    console.log("The result is:"+bubbleSort(arr));
+</script>
+
+</body>
+</html>
