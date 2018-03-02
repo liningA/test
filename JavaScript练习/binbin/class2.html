@@ -1,63 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>binbin-task2</title>
+    <title>IFE JavaScript Task 02</title>
 </head>
 <body>
-<h3>污染城市列表</h3>
-<ul id="aqi-list">
-    <!--
-    <li>第一名：福州（样例），10</li>
-      <li>第二名：福州（样例），10</li> -->
+<ul>
+   <li>["北京", 90],</li>
+   <li>["上海", 50],</li>
+    <li>["福州", 10],</li>
+   <li> ["广州", 50],</li>
+   <li>["成都", 90],</li>
+   <li>["西安", 100]</li>
 </ul>
 
-<script type="text/javascript">
-    /*
-    var aqiData = [
-        ["北京", 90],
-        ["上海", 60],
-        ["福州", 10],
-        ["广州", 50],
-        ["成都", 80],
-        ["西安", 100]
-    ];
-    (function () {
-        /*
-        在注释下方编写代码
-        遍历读取aqiData中各个城市的数据
-        将空气质量指数大于60的城市显示到aqi-list的列表中
-        */
-        var cont= document.querySelector("#aqi-list");
-//        筛选出大于60的城市数组
-        var lists=aqiData.filter(function (item,index,array) {
-             return (item[1]>=60);
-        })
-//        数组内排序
-        lists.sort(function (a,b) {
-            return (b[1]-a[1]);
-        })
-//        以序列的格式显示出来
-        lists.forEach(function (item,index,array) {
-            var newNode=document.createElement("li");
-            newNode.innerHTML=array[index][0]+":"+array[index][1];
-            cont.appendChild(newNode);
-
-        })
-
-    })();
-</script>
-<!--第二种方式-->
+<button id="sort-btn">排序</button>
 
 <h3>污染城市列表</h3>
 <ul id="aqi-list">
     <!--
-    <li>第一名：福州（样例），10</li>
-    <li>第二名：福州（样例），10</li> -->
+        <li>第一名：福州（样例），10</li>
+          <li>第二名：福州（样例），10</li> -->
 </ul>
 
 <script type="text/javascript">
-    var times=0;
+
     var aqiData = [
         ["北京", 90],
         ["上海", 50],
@@ -67,49 +34,85 @@
         ["西安", 100]
     ];
 
-    (function () {
+    function sortAqiData( ) {
 
         /*
-         在注释下方编写代码
-         遍历读取aqiData中各个城市的数据
-         将空气质量指数大于60的城市显示到aqi-list的列表中
+        在注释下方编写代码
+        遍历读取aqiData中各个城市的数据
+        将空气质量指数大于60的城市显示到aqi-list的列表中
         */
-        var arr = ['1', '2', '3', '4', '5', '6']
+        //第一种方式
+        /*
+         var cons=document.querySelector("#aqi-list");
+        var  list1=aqiData.filter(function (item) {
+               return(item[1]>=60);
+            
+        })
+        list1.sort(function (a,b) {
+               return(b[1]-a[1]);
+        })
+        list1.forEach(function (item,index,array) {
+            var newNode=document.createElement("li");
+            newNode.innerHTML=array[index][0]+":"+array[index][1];
+            cons.appendChild(newNode);
+        })
+        */
+        //第二种
+        /*
         var list = document.getElementById("aqi-list");
+        aqiData.sort(function (a,b) {
+            return(b[1]-a[1]);
 
+        })
+        console.log(aqiData);
+        for(var i = 0; i < aqiData.length; i++){
+            var choice=aqiData[i];
+            if(choice[1]>=60){
+                var newNode=document.createElement("li");
+                newNode.innerHTML="第" + [i+1] + '名 : ' + choice;
+                list.appendChild(newNode);
+            }
 
-        /*给aqiData冒泡排序*/
-        var bubbleSort=function(arr) {
-            for (var i = 0; i < aqiData.length-1; i++) {
-                for (var j = 0; j < aqiData.length-1 ; j++) {
-                    var temp;
-                    if (aqiData[j][1] < aqiData[j+1][1]) {
-                        temp = aqiData[j];
-                        aqiData[j] = aqiData[j+1];
-                        aqiData[j+1] = temp;
-                    }
-                    console.log("第" + (++times) + "次排序后：" + aqiData);
-                }
+        }
+    };
+*/
+        //第三种
+        /*
+        var sortList=document.getElementById("aqi-list");
+            aqiData.sort(function (a,b) {
+                 return(b[1]-a[1])
+
+             })
+        for(var i=0;i<aqiData.length;i++){
+            if (aqiData[i][1]>60) {
+                    var item = document.createElement("li");
+                    item.innerHTML = "第" + [i + 1] + "名:" + aqiData[i][0] + "," + aqiData[i][1];
+                    sortList.appendChild(item);
             }
         }
-        console.log("The result is:"+bubbleSort(arr));
+    }
+    var btn=document.getElementById("sort-btn");
+          btn.onclick=sortAqiData;
+          */
+        //第四种
 
-        /* 排序 */
-       /* aqiData.sort(function(a, b){
-            return b[1] - a[1];
+        var sortList=document.querySelector("#aqi-list");
+          var list= aqiData.filter(function (item) {
+               return(item[1]>60);
+
+           })
+          list.sort(function (a,b) {
+              return(b[1]-a[1]);
+
+          })
+        list.forEach(function (item,index,array) {
+            var li=document.createElement("li");
+            li.innerHTML=array[index][0]+array[index][1];
+            sortList.appendChild(li);
         })
-
-        for(var i = 0; i < aqiData.length; i++){
-            var choice = aqiData[i];
-            if(choice[1] >= 60){
-                var listItem = document.createElement("li");
-                listItem.innerHTML = "第" + arr[i] + '名 : ' + choice;
-                list.appendChild(listItem);
-            }
-        }*/
-
-    })();
-
+    }
+    var btn=document.getElementById("sort-btn");
+    btn.onclick=sortAqiData;
 </script>
 </body>
 </html>

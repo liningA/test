@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三：零基础JavaScript编码（三）</title>
+</head>
+<body>
+<ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+</ul>
+<ul id="resort">
+    <!--
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+</ul>
+<button id="sort-btn">排序</button>
+<script type="text/javascript">
+    var arr = ['1', '2', '3', '4', '5', '6']
+    var list = document.getElementById("aqi-list");
+
+
+    /*给aqiData冒泡排序*/
+    var bubbleSort=function(arr) {
+        for (var i = 0; i < aqiData.length-1; i++) {
+            for (var j = 0; j < aqiData.length-1 ; j++) {
+                var temp;
+                if (aqiData[j][1]< aqiData[j+1][1]) {
+                    temp = aqiData[j+1];
+                    aqiData[j+1] = aqiData[j];
+                    aqiData[j] = temp;
+                }
+                console.log("第" + (++times) + "次排序后：" + aqiData);
+            }
+        }
+    }
+    console.log("The result is:"+bubbleSort(arr));
+
+    /* 排序 */
+    /* aqiData.sort(function(a, b){
+         return b[1] - a[1];
+     })
+
+     for(var i = 0; i < aqiData.length; i++){
+         var choice = aqiData[i];
+         if(choice[1] >= 60){
+             var listItem = document.createElement("li");
+             listItem.innerHTML = "第" + arr[i] + '名 : ' + choice;
+             list.appendChild(listItem);
+         }
+     }*/
+
+    })();
+
+
+    //
+
+    /*function  getData() {
+    var city = document.querySelectorAll('#source>li');
+    var data = [];
+    for(var i = 0; i < city.length; i++) {
+        var text = city[i].innerText;
+        var node = [text.substr(0, 2), text.substr(-2, 2)];
+        data.push(node);
+    }
+    return data;
+
+}
+function sortAqiData(data) {
+    data.sort(function (a,b) {
+        return a[1]-b[1];
+    });
+    return data;
+}
+function render(data) {
+    var resort=document.getElementById('resort');
+    for(i=0;i<data.length;i++){
+        var liTex='第'+[i+1]+'名:'+data[i][0]+","+'空气质量：';
+        var oLi = document.createElement('li');
+        var oB = document.createElement('b');
+        oLi.innerText = liTex;
+        oB.innerText = data[i][1];
+        oLi.appendChild(oB);
+        resort.appendChild(oLi);
+    }
+
+}
+function btnHandle() {
+  var aqiData = getData();
+  aqiData=sortAqiData(aqiData);
+  render(aqiData);
+
+}
+function init() {
+    var btn = document.getElementById('sort-btn');
+    btn.onclick = function() {
+        btnHandle();
+    };
+}
+init();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程五：队列&排序</title>
+    <style type="text/css">
+        ul{
+            overflow: hidden;
+            height: 150px;
+        }
+        ul>li{
+            float: left;
+            background-color: pink;
+            width: 20px;
+            margin: 0 5px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="get" accept-charset="utf-8">
+    <input type="text" id="getIn" placeholder="请输入10-100之间的数字~">
+    <input type="button" value="左侧入" id="leftIn">
+    <input type="button" value="右侧入" id="rightIn">
+    <input type="button" value="左侧出" id="leftOut">
+    <input type="button" value="右侧出" id="rightOut">
+    <input type="button" value="排序" id="sortNum">
+</form>
+
+<ul id="queue"></ul><!-- 空白文本也会算作子结点，所以为保证num以及firstchild与lastchild正确，ul之间不能有空 -->
+
+<script type="text/javascript">
+    var  inNum=document.getElementById("getIn");
+    var leftIn=document.getElementById("leftIn");
+    var rightIn=document.getElementById("rightIn");
+    var leftOut=document.getElementById("leftOut");
+    var rightOut=document.getElementById("rightOut");
+    var sortNum=document.getElementById("sortNum");
+    var num=0;console.log(document.getElementById("queue").childNodes.length);
+    var queue=document.getElementById("queue");
+    //左侧入按钮
+    leftIn.onclick=function () {
+        if(num>=60){
+            alert("数组已满，请不要再输入了");
+          }
+        else{
+            var oLi=document.createElement("li");
+            var oLiHeight=inNum.value;
+            if(inNum.value>=10 && inNum.value<=100){
+                oLi.style.height=oLiHeight+"px";
+                oLi.style.marginTop=(100-oLiHeight)+"px";
+                oLi.innerHTML=oLiHeight;
+                queue.insertBefore(oLi,queue.firstChild);
+                num++
+            }
+            else {
+                alert("请输入一个数字");
+            }
+        }
+        console.log(num);
+    }
+    //右侧入按钮
+    rightIn.onclick=function () {
+        if(num>=60){
+            alert("数组已满，请不要再输入了");
+        }
+        else{
+            var oLi=document.createElement("li");
+            var oLiHeight=inNum.value;
+            if(inNum.value>=10 && inNum.value<=100){
+                oLi.style.height=oLiHeight+"px";
+                oLi.style.marginTop=(100-oLiHeight)+"px";
+                oLi.innerHTML=oLiHeight;
+                queue.appendChild(oLi);
+                num++
+            }
+            else {
+                alert("请输入一个数字");
+            }
+        }
+        console.log(num);
+    }
+    //左侧出按钮
+    leftOut.onclick=function () {
+      if(num>0){
+          alert(queue.firstChild.innerText)
+          queue.firstChild.remove();
+          num--
+      }
+      else{
+          alert("没有可以删除的数字啦");
+          num=0;
+      }
+      console.log(num);
+    }
+    //右侧出按钮
+    rightOut.onclick=function () {
+        if(num>0){
+             alert(queue.lastChild.innerText)
+            queue.lastChild.remove();
+            num--
+        }
+        else{
+            alert("没有可以删除的数字啦");
+            num=0;
+        }
+        console.log(num);
+    }
+    //排序按钮
+   sortNum.onclick=function () {
+       var liList = queue.childNodes;
+       console.log(liList);
+       var arr = [];
+       for (var i = 0; i < liList.length; i++) {
+           arr[i] = liList[i].innerHTML;
+
+       }
+       arr = arrSort(arr);
+       console.log(arr);
+
+       for (var i = 0; i < liList.length; i++) {
+           liList[i].innerHTML = arr[i];
+           liList[i].style.height = arr[i] + "px";
+           liList[i].style.marginTop = (100 - arr[i]) + "px";
+       }
+       return arr;
+   }
+   //排序函数
+   function arrSort(arr) {
+    arr.sort(function (a,b) {
+        return [a] - [b];
+    })
+
+     return arr;
+    }
+
+
+
+
+</script>
+</body>
+</html>

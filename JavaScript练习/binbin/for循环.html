@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta  charset="utf-8"></meta>
+    <style>
+
+    </style>
+    <script type="text/javascript">
+        var re=null,
+            solut1,
+            solut2,
+            i,
+            num=0;
+        for(i=0;i<10;i++){
+            re=/cat/g;
+            solut1=re.test("catastrophe");
+            num=num+1;
+            console.log(num);
+            console.log(solut1);
+        }
+        for(i=0;i<10;i++){
+            re= new RegExp("cat","g");
+            solut2=re.test("catastrophe");
+            num=num+1;
+            console.log(num);
+            console.log(solut2);
+        }
+
+    </script>
 </head>
 <body>
-<script>
-    var arr=[ 120,98,65,43,100]
-    var times=0;
-    var bubbleSort=function(arr){
-        for(var i=0;i<arr.length-1;i++){
-            for(var j=i+1;j<arr.length;j++){
-                if(arr[i]>arr[j]){//如果前面的数据比后面的大就交换
-                    var temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-                console.log("第"+(++times)+"次排序后："+arr);
-            }
-        }
-        return arr;
-    }
-    console.log("The result is:"+bubbleSort(arr));
-</script>
+ var tree = {value: 1,
+             left: {value: 2,left: {value: 4}
+                   },
+             right: {value: 3,left:
+                      {value: 5,left:
+                      {value: 7},
+                      right: {value: 8}
+                      },right: {value: 6}
+              }
+ }
 
 </body>
+
 </html>

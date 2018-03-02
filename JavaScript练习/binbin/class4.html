@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务四：基础JavaScript练习（一）</title>
+    <style>
+        li{
+            display:inline-block;
+            background-color: #cd4a48;
+            color: #f3f6f7;
+            font-size:20px;
+            text-align:center;
+            padding:5px;
+            margin:5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<!--
+<input type="text" id="inNum" name="number">
+<button id="btnLeftIn" >左侧入</button>
+<button id="btnRightIn">右侧入</button>
+<button id="btnLeftOut">左侧出</button>
+<button id="btnRightOut">右侧出</button>
+<!--数字队列-->
+<!--
+<ul id="queue"></ul>
+
+<script type="text/javascript">
+
+    // 绑定变量
+    var inNum=document.getElementById("inNum");
+    var outNum=document.getElementById("outNum");
+    var btnLeftIn=document.getElementById("btnLeftIn");
+    var btnRightIn=document.getElementById("btnRightIn");
+    var btnLeftOut=document.getElementById("btnLeftOut");
+    var btnRightOut=document.getElementById("btnRightOut");
+     var  queue=document.getElementById("queue");
+    //判断输入内容
+
+    //判断按钮 以及执行的功能
+     btnLeftIn.onclick=leftIn;
+     btnRightIn.onclick= rightIn;
+     btnLeftOut.onclick=leftOut;
+     btnRightOut.onclick=rightOut;
+
+    function leftIn() {
+        if (inNum.value === "") {
+            alert("请输入要插入的内容")
+        }
+        else if (isNaN(inNum.value)) {
+            alert("请输入一个数字")
+        }
+        else {
+            var li = document.createElement("li");
+            li.innerText = inNum.value;
+            queue.insertBefore(li, queue.firstElementChild)
+        }
+    }
+    function rightIn() {
+        if (inNum.value === "") {
+            alert("请输入要插入的内容")
+        }
+        else if (isNaN(inNum.value)) {
+            alert("请输入一个数字")
+        }
+        else {
+            var li = document.createElement("li");
+            li.innerText = inNum.value;
+            queue.appendChild(li);
+        }
+    }
+     function  leftOut() {
+
+         if (queue.childNodes.length>0) {
+             alert(queue.firstElementChild.innerText)
+             queue.firstElementChild.remove();
+         }
+         else {
+             alert("没有可以删除的数字啦")
+         }
+     }
+    function  rightOut() {
+
+        if (queue.childNodes.length>0){
+            alert(queue.lastElementChild.innerText)
+            queue.lastElementChild.remove();
+        }
+        else{
+            alert("没有可以删除的数字啦")
+        }
+    }
+    queue.addEventListener('click', function (e) {
+        if(event.target.nodeName.toLowerCase() == 'li')
+        queue.removeChild(event.target);
+    })
+</script>
+-->
+
+<input type="text" id="inNum" name="number">
+<button  id="leftIn" >左侧入</button>
+<button  id="rightIn" >右侧入</button>
+<button  id="leftOut" >左侧出</button>
+<button  id="rightOut" >右侧出</button>
+<ul id="outNum">
+
+</ul>
+<script>
+    //绑定输入输出变量
+    var inNum=document.getElementById("inNum");
+    var outNum=document.getElementById("outNum");
+    //绑定按钮
+    var LeftIn=document.getElementById("leftIn");
+    var RightIn=document.getElementById("rightIn");
+    var LeftOut=document.getElementById("leftOut");
+    var RightOut=document.getElementById("rightOut");
+
+    //插入数字
+    function insert(direction) {
+        if(inNum.value ===""){
+            alert("请输入需要插入的值");//输入框为空，按钮点击时，跳出提示框
+            inNum.focus();
+        } else if(isNaN(inNum.value)){
+            alert("只能输入数字");//输入框为非数字，按钮点击时，跳出提示框
+            inNum.value = "";
+            inNum.focus();
+        } else{
+            var oLi = document.createElement("li");
+            oLi.innerHTML = inNum.value;
+            if(direction === "left"){ //点击左侧按钮插入
+                outNum.insertBefore(oLi,outNum.firstChild);//将生成的li元素从前方放入
+            } else if(direction === "right"){ //点击右侧按钮插入
+                outNum.appendChild(oLi);//将生成的li元素从末尾放入
+            }
+        }
+    }//删除数字
+    function del(node,direction){
+        if(outNum.childNodes.length<=0){
+            alert("不存在元素可以删除");
+            return false;
+        } else{
+            if(direction === "left"){  //点击左侧按钮删除
+                alert("删除数字：" +outNum.firstChild.innerText +"！");
+                outNum.removeChild(outNum.firstChild);
+            } else if(direction === "right"){  //点击右侧按钮删除
+                alert("删除数字：" +outNum.lastChild.innerText +"！");
+                outNum.removeChild(outNum.lastChild);
+            } else{ //点击li标签删除
+                alert("删除数字：" +outNum.removeChild(node).innerText +"！");
+            }
+        }
+    }
+    //为按钮绑定事件
+    LeftIn.onclick = function(){insert("left");};
+    RightIn.onclick = function(){insert("right");};
+    LeftOut.onclick = function(){del(-1,"left");};
+    RightOut.onclick = function(){del(-1,"right");};
+    outNum.onclick = function(){del(event.target)};
+</script>
+
+
+</body>
+
+</html>
