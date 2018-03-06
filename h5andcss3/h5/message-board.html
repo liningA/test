@@ -9,10 +9,10 @@
 <h1>简单的留言板</h1>
 <textarea  id="dom" cols="60" rows="10"></textarea>
 <br>
-<input type="button" value="保存" onclick="save(dom);">
-<input type="button" value="清除" onclick="clear(msg);">
-<input type="button" value="读取" onclick="load(msg);">
-<hr>
+<input type="button" value="保存" onclick="saveStorage('dom');">
+<input type="button" value="清除" onclick="clearStorage('msg');">
+<input type="button" value="读取" onclick="loadStorage('msg');">
+<hr color="red">
 <p id="msg"></p>
 </body>
 </html>

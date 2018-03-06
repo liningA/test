@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="166cc3dc-19eb-43bb-b673-5361d1028526" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/task7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/task7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/yaoyao/class1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript练习/yaoyao/class2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/h5/message-board.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/h5/message-board.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/h5/bj-time.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript练习/binbin/class1.html" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript练习/binbin/class2.html" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/class2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript练习/binbin/for循环.html" afterPath="$PROJECT_DIR$/JavaScript练习/binbin/for循环.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/h5andcss3/h5/message-board.html" afterPath="$PROJECT_DIR$/h5andcss3/h5/message-board.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/h5andcss3/h5/message-board.js" afterPath="$PROJECT_DIR$/h5andcss3/h5/message-board.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,21 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="message-board.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="message-board.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="storage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/h5andcss3/h5/storage.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -62,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message-board.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message-board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="296">
+              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -78,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -121,8 +100,10 @@
         <option value="$PROJECT_DIR$/h5和css3/h5/storage.js" />
         <option value="$PROJECT_DIR$/h5andcss3/h5/storage.html" />
         <option value="$PROJECT_DIR$/h5andcss3/h5/storage.js" />
-        <option value="$PROJECT_DIR$/h5andcss3/h5/message-board.html" />
         <option value="$PROJECT_DIR$/h5andcss3/h5/message-board.js" />
+        <option value="$PROJECT_DIR$/h5andcss3/h5/message-board.html" />
+        <option value="$PROJECT_DIR$/h5andcss3/h5/bj-time.js" />
+        <option value="$PROJECT_DIR$/h5andcss3/h5/bj-time.html" />
       </list>
     </option>
   </component>
@@ -160,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +168,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -258,18 +239,20 @@
       <workItem from="1519710854543" duration="743000" />
       <workItem from="1519809405329" duration="1049000" />
       <workItem from="1519868699467" duration="16224000" />
-      <workItem from="1519952982174" duration="17452000" />
+      <workItem from="1519952982174" duration="18069000" />
+      <workItem from="1520212012911" duration="12607000" />
+      <workItem from="1520299619527" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328014000" />
+    <option name="totallyTimeSpent" value="341855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19399707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16105418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -299,9 +282,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/images/focus2.gif" />
-    <entry file="file://$PROJECT_DIR$/main.css" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/main.css" />
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -433,7 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -441,7 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,75 +430,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/标签.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/web storage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/web storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="106" column="18" lean-forward="true" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/canvs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5和css3/h5/storage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/标签.html" />
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/web storage.html" />
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/web storage.js" />
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/canvas.js" />
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/canvs.html" />
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/storage.js" />
+    <entry file="file://$PROJECT_DIR$/h5和css3/h5/storage.html" />
     <entry file="file://$PROJECT_DIR$/JavaScript练习/binbin/class1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,6 +449,14 @@
         <state relative-caret-position="171">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/bj-time.js" />
+    <entry file="file://D:/jquery/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6840">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -542,10 +470,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/bj-time.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="296">
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bj-time</title>
+</head>
+<body>
+<span id="bj_time"></span>
+<i class="iconfont"></i>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        checkDateTime();
+    });
+    var timerRunning = false;
+    function checkDateTime() {
+        if (timerRunning) {
+            clearTimeout(updatetime);
+            timerRunning = false;
+        }
+        for (var i = 1; i <= 1; i++) {
+            var today = new Date();
+            var month = today.getMonth() + 1;
+            var date = today.getDate();
+            var year = today.getYear() + 00;
+            month = today.getMonth() + 1;
+            date = today.getDate();
+            var day = today.getDay();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            var dateTime = addZero(hour) + ":" + addZero(minute) + ":" + addZero(second) + "," + addZero(month) + "/" + addZero(date);
+            if (i == 1) //北京时间
+                $("#bj_time").text(dateTime);
+        }
+        updatetime = setTimeout("checkDateTime()", 1000);
+        timerRunning = true;
+    }
+    function addZero(num, end) {
+        return num < 10 ? "0" + num : num;
+    }
+    /* 得到日期年月日等加数字后的日期 */
+    Date.prototype.dateAdd = function (interval, number) {
+        var d = this;
+        var k = { 'y': 'FullYear', 'q': 'Month', 'm': 'Month', 'w': 'Date', 'd': 'Date', 'h': 'Hours', 'n': 'Minutes', 's': 'Seconds', 'ms': 'MilliSeconds' };
+        var n = { 'q': 3, 'w': 7 };
+        eval('d.set' + k[interval] + '(d.get' + k[interval] + '()+' + ((n[interval] || 1) * number) + ')');
+        return d;
+    }
+
+</script>
+<script
+
+        type="text/javascript"
+
+        src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script
+        type="text/javascript"
+        src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+<script
+        type="text/javascript"
+        src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script
+        type="text/javascript"
+        src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+
+
+<script
+        type="text/javascript"
+        src="http://code.jquery.com/jquery-1.4.1.js"></script>
+
+</body>
+</html>
