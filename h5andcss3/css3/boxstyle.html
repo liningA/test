@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模式</title>
+    <style>
+/*        div{background-color: green; }
+        span{background-color: #ff6600; }*/
+/*        div{background-color: #e27a00;width: 50px;
+            height:50px; }
+        !*inline元素无法设置宽和高*!
+        .div1{display: inline-block}
+        .div2{display: inline}*/
+/*      前两个div并列显示，最后一个另起一行显示,使用浮动方法
+         div{width: 400px}
+        .div1{ background-color: #e27a00;width:200px;float: left}
+        .div2{background-color: #0588FF;width:200px;float: left }
+        .div3{background-color: #00DEFF;clear: both}*/
+       /*使用display：inline-block，但是垂直对齐方式是底部对齐*/
+/*      .div1{ background-color: #e27a00;width:200px;display: inline-block}
+        .div2{background-color: #0588FF;width:200px;display: inline-block;vertical-align: top}
+        .div3{background-color: #00DEFF;width: 400px}*/
+        /*水平菜单显示,使用浮动方法*/
+ /*       ul{padding: 0; margin: 0}
+        li{padding: 10px 20px;
+            background-color: #2292ff;
+            border-right: solid 1px #2066c7;
+            float: left;
+            width: 100px;
+            text-align: center;
+            list-style: none;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }*/
+/*水平菜单显示,使用inline-block方法*/
+/*ul{padding: 0; margin: 0}
+li{padding: 10px 20px;
+    background-color: #2292ff;
+    border-right: solid 1px #2066c7;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}*/
+        /*inline-table显示类型*/
+/*        table{border: solid 3px #cccccc;display:inline-table;vertical-align: bottom}
+        td{border: solid 1px #898989}*/
+         /*list-style-type显示类型*/
+/*        div{
+            list-style-type: circle;
+            margin-left: 30px;
+            display: list-item;
+        }*/
+        /*run-in类型的元素将被包括在后面的block类型的元素的内部*/
+
+     dl.run-in dt{
+         display: run-in;
+         border: solid 2px #cccccc;
+     }
+     dl.compact dt{}
+
+
+
+    </style>
+</head>
+<body>
+<!--<h1>两种盒模型</h1>
+<div class="div1">扎实推动经济高质量发展</div>
+<div class="div2">扎实推动经济高质量发展</div>
+<span>扎实推动经济高质量发展</span>-->
+<!--<h1>使用inline-block实现分列显示</h1>
+<div class="div1">
+    　　新华网北京3月6日电（王莹）“坚决打好三大攻坚战。
+    要围绕完成年度攻坚任务，明确各方责任，强化政策保障，把各项工作做实做好。”
+    在5日上午举行的十三届全国人大一次会议开幕会上，国务院总理李克强作政府工作报告，
+    抓好决胜全面建成小康社会三大攻坚战成为今年经济社会发展的重要方面。在今年的两会热点调查中，
+    三大攻坚战也同样成为网民高度关注的热点话题
+</div><div class="div2">
+    在今年的两会热点调查中，“金融监管”这一话题在排名上仅次于“收入分配”位居第二。
+    金融监管成为热门话题，既是决胜全面建成小康社会，打赢三大攻坚战的题中之意，
+    也从侧面反映出人民群众对于金融安全的迫切需要
+</div>
+<div class="div3">
+    　按照党的十九大要求，今后三年要重点抓好决胜全面建成
+    小康社会的防范化解重大风险、精准脱贫、污染防治三大攻坚战。
+    去年的中央经济工作会议进一步为打好三大攻坚战明确了工作重点和目标任务，
+    作出一系列补短板、强弱项的决策部署。5日的政府工作报告明确要求推动重大风险防范化解取得明显进展
+</div>-->
+<!--<h1>使用inline-block来显示水平菜单</h1>
+<ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">首页</a></li>
+
+</ul>-->
+<!--<h1>inline-table</h1>
+这是文字
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+
+</table>
+这是文字-->
+<!--<h1>list-item类型</h1>
+<div>扎实推动经济高质量发展</div>
+<div>扎实推动经济高质量发展</div>
+<div>扎实推动经济高质量发展</div>
+<div>扎实推动经济高质量发展</div>
+<div>扎实推动经济高质量发展</div>
+<div>扎实推动经济高质量发展</div>-->
+<h1>run-in类型或compact元素类型</h1>
+<dl class="run-in">
+   <dt>un-in类型</dt>
+    <dd>run-in类型的元素将被包括在后面的block类型的元素的内部</dd>
+</dl>
+
+<dl class="compact">
+    <dt>compact类型</dt>
+    <dd>compact类型的元素将被放在block类型的元素的左边</dd>
+</dl>
+
+</body>
+</html>

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="166cc3dc-19eb-43bb-b673-5361d1028526" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/h5/bj-time.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/css3/boxstyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/css3/fuwuqiziti.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/css3/selected.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5andcss3/css3/wenziyinying.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/h5andcss3/h5/message-board.html" afterPath="$PROJECT_DIR$/h5andcss3/h5/message-board.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/h5andcss3/h5/message-board.js" afterPath="$PROJECT_DIR$/h5andcss3/h5/message-board.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="message-board.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message-board.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -32,7 +33,7 @@
       <file leaf-file-name="storage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5andcss3/h5/storage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="380">
               <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -44,9 +45,52 @@
       <file leaf-file-name="message-board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="570">
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selected.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h5andcss3/css3/selected.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1729">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenziyinying.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h5andcss3/css3/wenziyinying.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fuwuqiziti.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h5andcss3/css3/fuwuqiziti.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boxstyle.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/h5andcss3/css3/boxstyle.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="e#1754#1880#0" expanded="false" />
+                <element signature="e#2186#2765#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,6 +148,10 @@
         <option value="$PROJECT_DIR$/h5andcss3/h5/message-board.html" />
         <option value="$PROJECT_DIR$/h5andcss3/h5/bj-time.js" />
         <option value="$PROJECT_DIR$/h5andcss3/h5/bj-time.html" />
+        <option value="$PROJECT_DIR$/h5andcss3/css3/selected.html" />
+        <option value="$PROJECT_DIR$/h5andcss3/css3/wenziyinying.html" />
+        <option value="$PROJECT_DIR$/h5andcss3/css3/fuwuqiziti.html" />
+        <option value="$PROJECT_DIR$/h5andcss3/css3/boxstyle.html" />
       </list>
     </option>
   </component>
@@ -152,6 +200,12 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="h5andcss3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="h5andcss3" type="462c0819:PsiDirectoryNode" />
+              <item name="css3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -241,20 +295,20 @@
       <workItem from="1519868699467" duration="16224000" />
       <workItem from="1519952982174" duration="18069000" />
       <workItem from="1520212012911" duration="12607000" />
-      <workItem from="1520299619527" duration="617000" />
+      <workItem from="1520299619527" duration="13444000" />
+      <workItem from="1520388561322" duration="14011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341855000" />
+    <option name="totallyTimeSpent" value="368693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16105418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23792094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -282,10 +336,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/main.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/main.css" />
     <entry file="file://$PROJECT_DIR$/images/shop-list.gif" />
     <entry file="file://$PROJECT_DIR$/images/focus1.jpg" />
     <entry file="file://$PROJECT_DIR$/images/focus2.gif" />
@@ -448,7 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -460,29 +509,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/h5andcss3/h5/bj-time.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -491,6 +521,59 @@
         <state relative-caret-position="171">
           <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/h5/message-board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/css3/selected.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1729">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/css3/wenziyinying.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/css3/fuwuqiziti.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5andcss3/css3/boxstyle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#1754#1880#0" expanded="false" />
+            <element signature="e#2186#2765#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

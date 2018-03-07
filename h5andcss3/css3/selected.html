@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类选择器</title>
+    <style>
+      :root{
+            background-color: #abffeb;
+        }
+        body *:not(h1){
+            background-color: #eeeeee;
+        }
+
+      /*类选择器*/
+      p.left{
+          color: red;
+      }
+      p.right{
+          color: green;
+      }
+      /*17个伪类选择器*/
+      a:link{
+          color: #000000;
+      }
+      a:visited{
+          color: #00DEFF;
+      }
+      a:hover{
+          color: #e27a00;
+      }
+      a:active{
+          color: yellow;
+      }
+      /*伪元素选择器*/
+      p:first-line{
+          color: aqua;
+      }
+      p:first-letter{
+          color: yellow;
+          font-size: 24px;
+      }
+     li{
+         list-style: none;
+     }
+     /*前插入*/
+      li:before{
+          content: "..";
+      }
+      li:after{
+          content: "..after追加";
+          color: hotpink;
+      }
+      /*空白*/
+      :empty{
+            background-color: #e27a00;
+        }
+
+        :target{
+            background-color: #00AFFF;
+            color: #000000;
+
+        }
+        li:first-child{
+            background-color: #ffc57c;
+        }
+        li:last-child{
+            background-color:#534261 ;
+        }
+        /*li:nth-child(even){
+            background-color: red;
+        }正数第n个元素的样式，odd偶数个，even奇数个
+
+/*       li:nth-last-child(2){
+          background-color: #0588FF;
+       }!*倒数第n个元素的样式，odd偶数个，even奇数个*!*/
+/*        h2:nth-of-type(odd){
+            background-color: tan;
+        }
+        p:nth-last-of-type(1){
+            background-color: hotpink;
+        }!*ie8以上才能支持*!*/
+
+ /*   循环使用样式
+        li:nth-child(4n+1){
+         background-color: #0588FF;
+        }
+        li:nth-child(4n+2){
+         background-color: #cd4a48;
+        }
+        li:nth-child(4n+3){
+          background-color: #e27a00;
+        }
+        li:nth-child(4n+4){
+          background-color: green;
+        }
+*/
+ /*
+      li :only-child{
+            background-color: deeppink;
+        }
+        input[type="text"]:hover{
+            background-color: green;
+        }
+
+        input[type="text"]:focus{
+            background-color: #e27a00;
+        }
+        input[type="text"]:active{
+            background-color: #cd4a48;
+        }*/
+        /*可用和不可用*/
+/*      input[type="text"]:enabled{
+          background-color: green;
+      }
+        input[type="text"]:disabled{
+            background-color: grey;
+        }*/
+        /*只读和非只读*/
+/*
+        input[type="text"]:read-only{
+            background-color: green;
+            color: #ffffff;
+        }
+        input[type="text"]:read-write{
+
+            color: #ff6600;
+        }
+*/
+/*
+        input[type="checkbox"]:checked{
+            outline: 2px solid green;
+        }
+       !*仅仅支持火狐浏览器*! input[type="checkbox"]:default{
+            outline: 2px solid green;
+        }
+        !*单选控制样式*!
+        input[type="checkbox"]:indeterminate{
+            outline: 2px solid green;
+        }
+*/
+        /*表示页面选择部分的样式，也可以在前面加上部分的选择进行选择样式，例如：input[type=text]::selection*/
+/*        ::selection{
+            background-color: green;
+            color: #ffffff;
+        }
+        !*通过验证和不通过验证的样式*!
+        input[type='email']:invalid{
+            color: red;
+        }
+        input[type='email']:valid{
+            color: green;
+        }
+        !*必须输入和可选输入*!
+        input[type='text']:required{
+           background-color:  red;
+        }
+        input[type='password']:optional{
+            background-color: green;
+        }
+        !*满足条件和不满足条件时的样式*!
+        input[type='number']:in-range{
+            color: green;
+        }
+        input[type='number']:out-of-range{
+            color: red;
+        }
+        !*before和after对应使用，如果在一系列元素中个别不需要插入内容，可以定义class选择相定，在样式中content:none*!
+        h3:before{
+            content: "world";
+            color: red;
+
+        }
+        !*插入图片格式*!
+        h2:before{
+            content: url("hot.jpg");*/
+        }
+      /*插入counter计数器*/
+        h1:before{
+         content: counter(hajsq,disc);
+           color: green;
+            font-size: 20px;
+        }
+        h1{
+            counter-increment: hajsq;
+        }
+
+    </style>
+</head>
+<body>
+<!--伪类选择器
+可以随便取名
+<p  class="left">你好</p>
+<p  class="right">世界</p>
+伪类选择器
+&lt;!&ndash;已经被css确定好的，常见如下&ndash;&gt;
+<a href="#">伪类选择器</a>
+&lt;!&ndash;伪元素选择器&ndash;&gt;
+<p>在css中，主要有4个伪元素选择器<br>
+    first-line选择某个元素的第一行文字使用样式。
+</p>
+&lt;!&ndash;元素前面/后面追加内容&ndash;&gt;
+<ul>
+    <li><a href="#">伪类选择器</a></li>
+    <li><a href="#">伪类选择器</a></li>
+    <li><a href="#">伪类选择器</a></li>
+    <li><a href="#">伪类选择器</a></li>
+    <li><a href="#">伪类选择器</a></li>
+</ul>
+&lt;!&ndash;结构性伪类选择器&ndash;&gt;
+<h1>not选择器</h1>
+<p>not选择器not选择器not选择器not选择器not选择器not选择器not选择器not选择器not选择器not选择器</p>
+<br>
+<table border="1" cellpadding="0" cellspacing="0" width="50%">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td></td>
+        <td>8</td>
+    </tr>
+
+</table>
+&lt;!&ndash;target选择器，链接到对应的区域，然后改变样式&ndash;&gt;
+<a href="#A">A</a>
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<div id="A">
+    <h1>标题</h1>
+    <p>内容</p>
+</div>
+<div id="B">
+    <h1>标题</h1>
+    <p>内容</p>
+</div>
+<div id="C">
+    <h1>标题</h1>
+    <p>内容</p>
+</div>
+<div id="D">
+    <h1>标题</h1>
+    <p>内容</p>
+</div>
+&lt;!&ndash;选择器 first-child,last-child,nth-child,nth-last-child&ndash;&gt;
+<h1>选择器 first-child,last-child,nth-child,nth-last-child</h1>
+<ul>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+    <li>第一个项目</li>
+
+</ul>
+<div>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+    <h2>标题</h2>
+    <p>内容</p>
+</div>
+<ul>
+    <li>唯一</li>
+   </ul>
+<h1>选择器 E：hover E:active E：focus</h1>
+&lt;!&ndash;<form>
+    姓名：<input type="text" placeholder="请输入姓名">
+    <br>
+    密码：<input type="password" placeholder="请输入密码">
+</form>&ndash;&gt;
+<form>
+    姓名：<input type="text" placeholder="木子" readonly>
+    <br>
+    学校：<input type="text" placeholder="请输入学校名称">
+</form>
+<h1>checked伪类选择器</h1>
+<form>
+    <input type="checkbox"  checked>水
+    <input type="checkbox">电
+    <input type="checkbox">光纤
+    <input type="checkbox">燃气
+</form>
+<h1>伪类选择器E：selection</h1>
+<p>新华网北京3月7日电 3月7日上午，中共中央总书记、国家主席、中央军委主席习近平来到十三届全国人大一次会议广东代表团参加审议。</p>
+<h1>E:invalid伪类选择器和E:valid选择器</h1>
+<input type="email" placeholder="请输入邮箱">
+<h1>必须输入和可选输入</h1>
+姓名：<input type="text" placeholder="请输入姓名" required>
+密码：<input type="password" placeholder="请输入密码">
+<h1>满足条件和不满足条件时的样式</h1>
+请输入数字：<input type="number" min="0" max="100">
+<h1>使用~选择兄弟元素（元素之后，同父元素）</h1>
+<h3>你好</h3>
+
+    <h2 >插入图片</h2>-->
+
+    <h1 >多个标题前面加上编号</h1>
+    <p>加上编号</p>
+    <h1 >多个标题前面加上编号</h1>
+    <p>加上编号</p>
+    <h1 >多个标题前面加上编号</h1>
+    <p>加上编号</p>
+    <h1>多个标题前面加上编号</h1>
+    <p>加上编号</p>
+
+
+</body>
+</html>
